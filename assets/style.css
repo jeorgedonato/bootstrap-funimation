@@ -1,0 +1,171 @@
+body {
+	font-family: 'Open Sans', 'Nunito Sans', sans-serif;
+}
+
+@media (min-width: 1600px) {
+    .container{
+        max-width: 1500px;
+    }
+}
+
+/*
+ * Custom translucent site header
+ */
+
+.site-header {
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: #999;
+  transition: ease-in-out color .15s;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #e5e5e5;
+}
+
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  -ms-flex: 1;
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
+.overflow-hidden { overflow: hidden; }
+
+.blue-bg{
+  background: #0a0a23;
+}
+
+.purple-bg{
+  background: #410099;
+}
+
+.nav-top{
+	font-weight: 600;
+  font-size: 14px;
+}
+
+/* xs */
+#logopic {
+    width: 100px;
+    height: auto;
+}
+/* sm */
+@media (min-width: 768px) {
+    #logopic {
+        width: 150px;
+    }
+}
+/* md */
+@media (min-width: 992px) {
+    #logopic {
+        width: 200px;
+    }
+}
+/* lg */
+@media (min-width: 1200px) {
+    #logopic {
+        width: 250px;
+    }
+}
+
+.purple-text{
+  color: #410099 !important;
+}
+
+#landing-page{
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: -webkit-fill-available;
+}
+
+#landing-page .video-wrapper{
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+
+#landing-page .video-wrapper video{
+  bottom: 0;
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#landing-page .videoOverlayContainer{
+  background-color: #400093;
+  height: 100%;
+  left: 0;
+  opacity: .75;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+#landing-page #video-overlay{
+  color: #FFFFFF;
+  margin: 80px auto 50px auto;
+  max-width: 730px;
+  position: relative;
+  text-align: center;
+  z-index: 10;
+}
